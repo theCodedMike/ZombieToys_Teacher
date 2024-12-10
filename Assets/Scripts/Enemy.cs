@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -53,7 +52,8 @@ public class Enemy : MonoBehaviour
 
     void Attack()
     {
-        target.GetComponent<PlayerHealth>().Damage(5);
+        if (target != null)
+            target.GetComponent<PlayerHealth>().Damage(5);
     }
 
     void StartSinking()
@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            InvokeRepeating(nameof(Attack), 0.5f, 1f);
+            InvokeRepeating(nameof(Attack), 0.2f, 1f);
         }
     }
 

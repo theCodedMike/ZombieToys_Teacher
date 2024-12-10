@@ -58,7 +58,7 @@ public class PlayerShot : MonoBehaviour
             endPoint = hit.point;
             if (hit.transform.CompareTag("Enemy"))
             {
-                print("enemy hit...");
+                //print("enemy hit...");
                 hit.transform.GetComponent<Enemy>().Damage();
             }
         }
