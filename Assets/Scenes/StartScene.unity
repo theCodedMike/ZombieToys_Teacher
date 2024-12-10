@@ -842,7 +842,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 4294967295
-  ShotClip: {fileID: 8300000, guid: 50f58c4fca03145f88f398ae8d566ca8, type: 3}
+  ShotClip: {fileID: 8300000, guid: efc6982011b74411bbe14993b0ae76f9, type: 3}
 --- !u!1 &774067840
 GameObject:
   m_ObjectHideFlags: 0
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc79a53a53d41d448ca9967a925aabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spwanSpeed: 2
+  spwanSpeed: 0.6
 --- !u!1 &1092501455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 192228, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}

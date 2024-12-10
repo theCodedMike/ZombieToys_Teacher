@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 // ReSharper disable once HollowTypeName
 public class GameManager

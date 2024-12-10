@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
             agent.SetDestination(target.position);
     }
 
-    public void Damage(int damageHp = 40)
+    public void Damage(int damageHp = 50)
     {
         hp -= damageHp;
         audioSource.PlayOneShot(hurtClip);

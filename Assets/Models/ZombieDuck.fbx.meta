@@ -1,73 +1,161 @@
 fileFormatVersion: 2
 guid: ffc1cce828542694b8004c32865149a5
-timeCreated: 1438879316
-licenseType: Store
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: Head
-    100002: Hips
-    100004: Jaw
-    100006: joint1
-    100008: joint12
-    100010: joint2
-    100012: joint3
-    100014: joint6
-    100016: joint7
-    100018: joint8
-    100020: KEY_bone
-    100022: L_Foot
-    100024: L_Leg
-    100026: R_Foot
-    100028: R_Leg
-    100030: //RootNode
-    100032: ZomDuck
-    400000: Head
-    400002: Hips
-    400004: Jaw
-    400006: joint1
-    400008: joint12
-    400010: joint2
-    400012: joint3
-    400014: joint6
-    400016: joint7
-    400018: joint8
-    400020: KEY_bone
-    400022: L_Foot
-    400024: L_Leg
-    400026: R_Foot
-    400028: R_Leg
-    400030: //RootNode
-    400032: ZomDuck
-    4300000: ZomDuck
-    7400000: Move
-    7400002: Idle
-    7400004: Death
-    9500000: //RootNode
-    13700000: ZomDuck
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Head
+  - first:
+      1: 100002
+    second: Hips
+  - first:
+      1: 100004
+    second: Jaw
+  - first:
+      1: 100006
+    second: joint1
+  - first:
+      1: 100008
+    second: joint12
+  - first:
+      1: 100010
+    second: joint2
+  - first:
+      1: 100012
+    second: joint3
+  - first:
+      1: 100014
+    second: joint6
+  - first:
+      1: 100016
+    second: joint7
+  - first:
+      1: 100018
+    second: joint8
+  - first:
+      1: 100020
+    second: KEY_bone
+  - first:
+      1: 100022
+    second: L_Foot
+  - first:
+      1: 100024
+    second: L_Leg
+  - first:
+      1: 100026
+    second: R_Foot
+  - first:
+      1: 100028
+    second: R_Leg
+  - first:
+      1: 100030
+    second: //RootNode
+  - first:
+      1: 100032
+    second: ZomDuck
+  - first:
+      4: 400000
+    second: Head
+  - first:
+      4: 400002
+    second: Hips
+  - first:
+      4: 400004
+    second: Jaw
+  - first:
+      4: 400006
+    second: joint1
+  - first:
+      4: 400008
+    second: joint12
+  - first:
+      4: 400010
+    second: joint2
+  - first:
+      4: 400012
+    second: joint3
+  - first:
+      4: 400014
+    second: joint6
+  - first:
+      4: 400016
+    second: joint7
+  - first:
+      4: 400018
+    second: joint8
+  - first:
+      4: 400020
+    second: KEY_bone
+  - first:
+      4: 400022
+    second: L_Foot
+  - first:
+      4: 400024
+    second: L_Leg
+  - first:
+      4: 400026
+    second: R_Foot
+  - first:
+      4: 400028
+    second: R_Leg
+  - first:
+      4: 400030
+    second: //RootNode
+  - first:
+      4: 400032
+    second: ZomDuck
+  - first:
+      43: 4300000
+    second: ZomDuck
+  - first:
+      74: 7400000
+    second: Move
+  - first:
+      74: 7400002
+    second: Idle
+  - first:
+      74: 7400004
+    second: Death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: ZomDuck
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: Move
       takeName: Take 001
+      internalID: 0
       firstFrame: 1
       lastFrame: 25
       wrapMode: 0
@@ -75,6 +163,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -125,9 +214,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle
       takeName: Take 001
+      internalID: 0
       firstFrame: 36
       lastFrame: 175
       wrapMode: 0
@@ -135,6 +226,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -185,9 +277,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Death
       takeName: Take 001
+      internalID: 0
       firstFrame: 180
       lastFrame: 225
       wrapMode: 0
@@ -195,6 +289,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -207,7 +302,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.38022873
+        functionName: StartSinking
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
@@ -245,44 +347,78 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
