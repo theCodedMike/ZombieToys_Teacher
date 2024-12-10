@@ -12,20 +12,21 @@ public class PlayerShot : MonoBehaviour
     public float rayHeight;
     [Header("射击时的遮罩")]
     public LayerMask mask;
+    [Header("攻击音效")]
+    public AudioClip ShotClip;
 
-
-    private LineRenderer lineRenderer;
-
+    private LineRenderer lineRenderer; // 玩家的攻击武器，需要用线来渲染
     private float timer;
     private Ray shootRay;
     private Vector3 endPoint;
-    private float effectDisplayTime = 0.2f;
-
+    private float effectDisplayTime = 0.2f; // 玩家的武器显示时间
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         lineRenderer = firePoint.GetComponent<LineRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -74,6 +75,8 @@ public class PlayerShot : MonoBehaviour
             pos += Vector3.up * kf.value * rayHeight;
             lineRenderer.SetPosition(i, pos);
         }
+
+        audioSource.PlayOneShot(ShotClip);
     }
 
     void DisableEffect()

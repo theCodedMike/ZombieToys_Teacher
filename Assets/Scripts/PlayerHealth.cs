@@ -11,16 +11,20 @@ public class PlayerHealth : MonoBehaviour
     public int hp;
     [Header("背景图片")]
     public Image damageImg;
+    [Header("死亡音效")]
+    public AudioClip deathClip;
+    [Header("受伤音效")]
+    public AudioClip hurtClip;
 
     private Animator animator;
-
-    private Color flashColor = new Color(1f, 0f, 0f, 0.3f);
-
+    private Color flashColor = new Color(1f, 0f, 0f, 0.3f); // 玩家受到伤害时背景图片会变红
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
             return;
 
         this.hp -= dropHp;
+        audioSource.PlayOneShot(hurtClip);
         StartCoroutine(DamageEffect());
 
         if (this.hp <= 0)
@@ -45,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
             this.hp = 0;
             // 播放死亡动画
             animator.SetTrigger(Death);
+            audioSource.PlayOneShot(deathClip);
 
             GameManager.Instance.GameOver = true;
         }
